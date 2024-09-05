@@ -25,7 +25,7 @@ defmodule Knock.Client do
           api_key: String.t(),
           adapter: atom(),
           json_client: atom(),
-          middleware_callback: ([atom()]) => [atom()]
+          middleware_callback: ([atom()] -> [atom()])
         }
 
   @doc """
